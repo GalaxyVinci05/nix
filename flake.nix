@@ -19,6 +19,14 @@
             ./hosts/asus/configuration.nix
           ];
         };
+
+        # Laptop
+        dell = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./hosts/dell/configuration.nix
+          ];
+        };
       };
 
     };
