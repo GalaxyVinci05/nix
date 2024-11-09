@@ -63,7 +63,7 @@
   # services.xserver.enable = true;
 
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -127,6 +127,7 @@
       pulsemixer
       polkit_gnome
       rofi-wayland
+      unzip
       waybar
       wl-clipboard
       xdg-user-dirs
@@ -136,9 +137,10 @@
       spotify
       libreoffice
       gimp
+      wineWowPackages.stable
     ];
   };
-  
+
   programs = {
     dconf.enable = true;
     file-roller.enable = true;
@@ -180,7 +182,7 @@
     neovim
     wget
   ];
-  
+
   # Fonts
   fonts = {
     enableDefaultPackages = true;

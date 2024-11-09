@@ -118,6 +118,7 @@
       pulsemixer
       polkit_gnome
       rofi-wayland
+      unzip
       waybar
       wl-clipboard
       xdg-user-dirs
