@@ -5,29 +5,9 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs: {
 
-    let
-      system = "x86_64-linux";
-    in {
-
-      nixosConfigurations = {
-        # Home machine
-        asus = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./hosts/asus/configuration.nix
-          ];
-        };
-
-        # Laptop
-        dell = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            ./hosts/dell/configuration.nix
-          ];
-        };
-      };
-
-    };
+    inherit (nixpkgs) lib;
+    nixosConfigurations = import ./hosts { inherit inputs; };
+  };
 }
