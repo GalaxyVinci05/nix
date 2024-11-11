@@ -2,6 +2,6 @@ _: {
   imports = [
     ../common
     # ./programs
-    # ./services
+    ./services
   ];
 }
