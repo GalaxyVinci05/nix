@@ -2,6 +2,15 @@
 
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # Decrease nix store size
+  nix.optimise.automatic = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "-d";
+  };
+
   nixpkgs.config.allowUnfree = true;
 
   # Enable OpenGL and other graphics stuff
@@ -81,6 +90,7 @@
   };
 
   security.polkit.enable = true;
+  security.pam.services.ly.enableGnomeKeyring = true;
 
   system.stateVersion = "24.05"; # Did you read the comment?
 

@@ -8,6 +8,7 @@
     brightnessctl
     btop
     cava
+    cpufetch
     dunst
     fastfetch
     ffmpegthumbnailer
@@ -22,7 +23,6 @@
     imv
     libcanberra-gtk3
     mpv
-    neovim
     onedrive
     pamixer
     pulsemixer
