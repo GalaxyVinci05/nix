@@ -3,5 +3,6 @@ _: {
     ./common
     ./asus
     ./dell
+    ./rpi
   ];
 }
