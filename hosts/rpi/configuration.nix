@@ -16,9 +16,12 @@
     options = "-d";
   };
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  # Use the extlinux boot loader. (NixOS wants to enable GRUB by default)
+  boot.loader.grub.enable = false;
+  # Enables the generation of /boot/extlinux/extlinux.conf
+  boot.loader.generic-extlinux-compatible.enable = true;
+
+  # boot.kernelPackages = pkgs.linuxKernel.packages.linux_rpi4;
 
   # NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
