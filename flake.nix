@@ -18,9 +18,6 @@
         "x86_64-linux"
       ];
 
-      flake = {
-        inherit (nixpkgs) lib;
-        nixosConfigurations = import ./hosts { inherit inputs; };
-      };
+      imports = [ ./hosts ];
     };
 }
