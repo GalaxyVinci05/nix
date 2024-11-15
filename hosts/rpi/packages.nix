@@ -10,6 +10,7 @@
     git
     jdk21_headless
     nodejs
+    pm2
     unzip
     wget
     tree
