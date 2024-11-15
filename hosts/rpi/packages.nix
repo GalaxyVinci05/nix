@@ -4,6 +4,7 @@
   # List rpi packages installed in system profile.
   environment.systemPackages = with pkgs-stable; [
     btop
+    certbot
     cpufetch
     fastfetch
     git
