@@ -14,13 +14,11 @@
 
     asus = nixosSystem {
       inherit specialArgs;
-      system = "x86_64-linux";
       modules = [ ../modules/asus ] ++ [ ./asus ];
     };
 
     dell = nixosSystem {
       inherit specialArgs;
-      system = "x86_64-linux";
       modules = [ ../modules/dell ] ++ [ ./dell ];
     };
 
@@ -30,7 +28,6 @@
         pkgs-stable = import nixpkgs-stable { system = "aarch64-linux"; };
       };
 
-      system = "aarch64-linux";
       modules = [ ../modules/rpi ] ++ [ ./rpi ];
     };
   };
