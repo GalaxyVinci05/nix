@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs-stable, ... }:
 
 {
   imports =
@@ -39,7 +39,7 @@
   users.users.server = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.fish;
+    shell = pkgs-stable.fish;
   };
 
   # Some programs need SUID wrappers, can be configured further or are

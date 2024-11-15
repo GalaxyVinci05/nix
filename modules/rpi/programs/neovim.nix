@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs-stable, ... }: {
   programs.neovim = {
     enable = true;
     defaultEditor = true;

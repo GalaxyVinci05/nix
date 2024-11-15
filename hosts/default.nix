@@ -3,6 +3,7 @@
   flake.nixosConfigurations = let
 
     inherit (inputs.nixpkgs.lib) nixosSystem;
+    inherit (inputs) nixpkgs-stable;
 
     # system = "x86_64-linux";
     specialArgs = { inherit inputs self; };
@@ -24,7 +25,11 @@
     };
 
     rpi = nixosSystem {
-      inherit specialArgs;
+      specialArgs = {
+        inherit inputs self;
+        pkgs-stable = import nixpkgs-stable { system = "aarch64-linux"; };
+      };
+
       system = "aarch64-linux";
       modules = [ ../modules/rpi ] ++ [ ./rpi ];
     };

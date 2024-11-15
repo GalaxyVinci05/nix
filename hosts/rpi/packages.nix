@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs-stable, ... }:
 
 {
   # List rpi packages installed in system profile.
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs-stable; [
     btop
     cpufetch
     fastfetch
