@@ -36,6 +36,12 @@
     shell = pkgs-stable.fish;
   };
 
+  # User with the only purpose of showing btop on an LCD screen
+  users.users.stats = {
+    isNormalUser = true;
+    shell = pkgs-stable.bash;
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

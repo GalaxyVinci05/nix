@@ -4,7 +4,7 @@
     hostName = "rpi";
 
     interfaces.eth0.ipv4.addresses = [ {
-      address = "192.168.1.8";
+      address = "192.168.1.3";
       prefixLength = 24;
     } ];
 
