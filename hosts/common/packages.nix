@@ -1,13 +1,14 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   # List common packages installed in system profile.
   environment.systemPackages = with pkgs; [
+
     # System
     alacritty
     brightnessctl
     btop
-    cava
+    # cava
     cpufetch
     dunst
     fastfetch
@@ -40,5 +41,9 @@
     gimp
     libreoffice
     spotify
+  ] ++ [
+
+    # Stable packages
+    (pkgs-stable.cava)
   ];
 }
