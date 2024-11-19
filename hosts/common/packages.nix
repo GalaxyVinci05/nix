@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
 
     # System
+    acpi
     alacritty
     brightnessctl
     btop
