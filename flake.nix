@@ -1,7 +1,7 @@
 {
   description = "My personal NixOS configuration flake";
 
-  outputs = { self, nixpkgs, nixpkgs-stable, nixvim, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, nvf, ... }@inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "aarch64-linux"
@@ -23,12 +23,9 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    nixvim = {
-      url = "github:nix-community/nixvim";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-      };
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 

@@ -6,10 +6,6 @@
     inherit (inputs) nixpkgs;
     inherit (inputs) nixpkgs-stable;
 
-    baseModules = [
-      inputs.nixvim.nixosModules.nixvim
-    ];
-
     # Builder function for specialArgs
     mkSpecialArgs = system: {
       inherit inputs self;
@@ -28,7 +24,7 @@
     # Builder function to build against specific system
     mkNixosSystem = systemName: system: modulesList: nixosSystem {
       specialArgs = mkSpecialArgs system;
-      modules = baseModules ++ modulesList;
+      modules = modulesList;
     };
   in {
 

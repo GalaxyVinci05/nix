@@ -1,10 +1,10 @@
 _: {
   imports = [
+    ./nvf
     ./fish.nix
     ./hyprland.nix
     ./hyprlock.nix
     ./neovim.nix
-    ./nixvim.nix
     ./nix-ld.nix
     ./ssh.nix
     ./thunar.nix
