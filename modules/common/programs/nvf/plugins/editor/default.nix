@@ -1,6 +1,5 @@
 _: {
   imports = [
-    ./editor
-    ./ui
+    ./neo-tree.nix
   ];
 }

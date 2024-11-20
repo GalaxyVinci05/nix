@@ -24,7 +24,7 @@
     };
 
     nvf = {
-      url = "github:notashelf/nvf";
+      url = "github:notashelf/nvf?ref=v0.7";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
