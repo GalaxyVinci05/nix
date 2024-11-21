@@ -16,6 +16,21 @@
             h = "close_node";
           };
         };
+
+        default_component_configs = {
+          indent = {
+            with_expanders = true;
+            expander_collapsed = "";
+            expander_expanded = "";
+            expander_highlight = "NeoTreeExpander";
+          };
+          git_status = {
+            symbols = {
+                unstaged = "󰄱";
+                staged = "󰱒";
+            };
+          };
+        };
       };
     };
 
