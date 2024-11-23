@@ -23,6 +23,11 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
+    hyprland = {
+      url = "git+https://github.com/hyprwm/hyprland?ref=refs/tags/v0.45.2&submodules=1";
+      # inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nvf = {
       url = "github:notashelf/nvf?ref=v0.7";
       inputs.nixpkgs.follows = "nixpkgs";
