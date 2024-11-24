@@ -2,6 +2,30 @@
   programs.nvf.settings.vim.tabline = {
     nvimBufferline = {
       enable = true;
+
+      setupOpts.options = {
+        always_show_bufferline = false;
+        indicator.style = "icon";
+        numbers = "none";
+
+        middle_mouse_command = {
+          _type = "lua-inline";
+          expr = ''
+            function(bufnum)
+              require("bufdelete").bufdelete(bufnum, false)
+            end
+          '';
+        };
+
+        offsets = [
+          {
+            filetype = "neo-tree";
+            highlight = "Directory";
+            separator = true;
+            text = "File Explorer";
+          }
+        ];
+      };
     };
   };
 }
