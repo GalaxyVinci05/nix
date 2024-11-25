@@ -13,12 +13,18 @@
         right = "";
       };
 
+      ignoreFocus = [
+        "neo-tree"
+      ];
+
       activeSection = {
         a = [
           ''
             {
               "mode",
+              "icons_enabled = true",
               separator = {
+                left = '▎';
                 right = ''
               },
             }

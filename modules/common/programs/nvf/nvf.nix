@@ -10,6 +10,8 @@
       };
 
       useSystemClipboard = true;
+      syntaxHighlighting = true;
+      tabWidth = 4;
     };
   };
 }

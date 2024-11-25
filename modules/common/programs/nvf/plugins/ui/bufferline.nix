@@ -4,7 +4,7 @@
       enable = true;
 
       setupOpts.options = {
-        always_show_bufferline = false;
+        always_show_bufferline = true;
         indicator.style = "icon";
         numbers = "none";
 

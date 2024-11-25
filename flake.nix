@@ -9,7 +9,6 @@
       ];
 
       imports = [
-        # nixvim.nixosModules.nixvim
         ./hosts
       ];
     };
