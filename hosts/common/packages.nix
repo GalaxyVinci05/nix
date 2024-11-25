@@ -14,7 +14,7 @@
     dunst
     fastfetch
     ffmpegthumbnailer
-    firefox
+    # firefox
     git
     glib
     gsettings-desktop-schemas

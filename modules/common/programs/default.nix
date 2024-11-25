@@ -1,6 +1,7 @@
 _: {
   imports = [
     ./nvf
+    ./firefox.nix
     ./fish.nix
     ./hyprland.nix
     ./hyprlock.nix
