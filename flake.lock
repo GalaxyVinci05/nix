@@ -590,11 +590,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1732389691,
-        "narHash": "sha256-s9BgpJK+9DzmrTCcfnLX6xzXIHleSmJTITQ+Kw+xTjQ=",
+        "lastModified": 1732603301,
+        "narHash": "sha256-hwo1B/sBWR3RD6H83WbKPHjWpUZeegAqBimROx6OegU=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "8c95b996c7828b0c3c1acea2b01486505fba68bb",
+        "rev": "a1a8d596edbd84f8edf640746c464cd18abda643",
         "type": "github"
       },
       "original": {
@@ -2161,11 +2161,11 @@
     "plugin-rustaceanvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1731172933,
-        "narHash": "sha256-B2AdSgGPANCBbVN+Sd7gvJ16ODZZwv4WSOxnRs3SWnk=",
+        "lastModified": 1732565373,
+        "narHash": "sha256-WRaNW0trZYEUKd05Uc+5nP+G81HI14d6lM7/WWz61E0=",
         "owner": "mrcjkb",
         "repo": "rustaceanvim",
-        "rev": "244443311f1c4e34ec1ea7f219a4b682b6ec066e",
+        "rev": "fee0aa094b0c9f93fffe5a385b3d5d2386c2b072",
         "type": "github"
       },
       "original": {
