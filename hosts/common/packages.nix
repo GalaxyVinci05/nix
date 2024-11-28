@@ -45,6 +45,6 @@
   ] ++ [
 
     # Stable packages
-    (pkgs-stable.cava)
+    pkgs-stable.cava
   ];
 }
