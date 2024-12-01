@@ -12,11 +12,12 @@
 
       options = {
         pumheight = 10;
+        tabstop = 4;
+        shiftwidth = 4;
       };
 
       useSystemClipboard = true;
       syntaxHighlighting = true;
-      tabWidth = 4;
       undoFile.enable = true;
     };
   };
