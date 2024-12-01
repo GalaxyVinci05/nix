@@ -41,7 +41,7 @@
     shell = pkgs.fish;
   };
 
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fonts
   fonts = {
