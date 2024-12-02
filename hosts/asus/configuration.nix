@@ -25,6 +25,9 @@
 
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  # Fixes clock in Windows dual boot
+  time.hardwareClockInLocalTime = true;
+
   system.stateVersion = "24.05"; # Did you read the comment?
 
 }
