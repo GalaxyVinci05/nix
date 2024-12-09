@@ -3,6 +3,10 @@
     nvimBufferline = {
       enable = true;
 
+      mappings = {
+        closeCurrent = "<leader>bd";
+      };
+
       setupOpts.options = {
         always_show_bufferline = true;
         indicator.style = "icon";
