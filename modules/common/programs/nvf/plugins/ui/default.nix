@@ -4,5 +4,6 @@ _: {
     ./indent-blankline.nix
     ./lualine.nix
     ./noice.nix
+    ./nvim-scrollbar.nix
   ];
 }
