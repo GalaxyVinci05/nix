@@ -23,6 +23,11 @@
 
   networking.hostName = "asus"; # Define your hostname.
 
+  networking.firewall = {
+    enable = true;
+    allowedUDPPorts = [ 19132 19133 ];
+  };
+
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fixes clock in Windows dual boot
