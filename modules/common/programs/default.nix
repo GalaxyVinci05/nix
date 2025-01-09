@@ -9,5 +9,6 @@ _: {
     ./nix-ld.nix
     ./ssh.nix
     ./thunar.nix
+    ./virt-manager.nix
   ];
 }
