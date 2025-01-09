@@ -9,7 +9,7 @@
     alacritty
     brightnessctl
     btop
-    # cava
+    cava
     cpufetch
     dunst
     fastfetch
@@ -45,6 +45,6 @@
   ] ++ [
 
     # Stable packages
-    pkgs-stable.cava
+    # pkgs-stable.cava
   ];
 }
