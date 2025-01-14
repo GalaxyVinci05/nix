@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     audacity
     davinci-resolve
-    kdenlive
+    kdePackages.kdenlive
     nvtopPackages.nvidia
     prismlauncher
     unityhub
