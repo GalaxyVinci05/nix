@@ -28,6 +28,11 @@
     allowedUDPPorts = [ 19132 19133 ];
   };
 
+  systemd.services.nix-daemon.serviceConfig = {
+    MemoryHigh = "24G";
+    MemoryMax = "32G";
+  };
+
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fixes clock in Windows dual boot
