@@ -31,7 +31,7 @@
     polkit_gnome
     rofi-wayland
     unzip
-    waybar
+    # waybar
     wget
     wl-clipboard
     xdg-user-dirs

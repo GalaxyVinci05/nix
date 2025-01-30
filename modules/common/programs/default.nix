@@ -10,5 +10,6 @@ _: {
     ./ssh.nix
     ./thunar.nix
     ./virt-manager.nix
+    ./waybar.nix
   ];
 }
