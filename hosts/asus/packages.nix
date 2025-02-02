@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     audacity
     davinci-resolve
+    kanshi
     kdePackages.kdenlive
     nvtopPackages.nvidia
     prismlauncher
