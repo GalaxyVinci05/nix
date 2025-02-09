@@ -40,6 +40,7 @@
     # Others
     discord
     gimp
+    hypnotix
     libreoffice
     spotify
   ] ++ [
