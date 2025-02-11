@@ -52,6 +52,8 @@
       noto-fonts-cjk-sans
       noto-fonts-emoji
       unifont
+      corefonts
+      vista-fonts
       # (nerdfonts.override { fonts = [ "JetBrainsMono Nerd Font" ]; })
     ];
 
