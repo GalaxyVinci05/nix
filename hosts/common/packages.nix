@@ -14,6 +14,7 @@
     dunst
     fastfetch
     ffmpegthumbnailer
+    file-roller
     # firefox
     git
     glib
