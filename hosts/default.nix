@@ -29,6 +29,7 @@
   in {
 
     asus = mkNixosSystem "asus" "x86_64-linux" ([ ../modules/asus ] ++ [ ./asus ]);
+    asusdesktop = mkNixosSystem "asusdesktop" "x86_64-linux" ([ ../modules/asusdesktop ] ++ [ ./asusdesktop ]);
     dell = mkNixosSystem "dell" "x86_64-linux" ([ ../modules/dell ] ++ [ ./dell ]);
     rpi = mkNixosSystem "rpi" "aarch64-linux" ([ ../modules/rpi ] ++ [ ./rpi ]);
   };
