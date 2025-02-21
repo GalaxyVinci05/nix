@@ -12,7 +12,7 @@
         #"use sendfile" = "yes";
         #"max protocol" = "smb2";
         # note: localhost is the ipv6 localhost ::1
-        "hosts allow" = "192.168.0. 127.0.0.1 localhost";
+        "hosts allow" = "192.168.1. 127.0.0.1 localhost";
         "hosts deny" = "0.0.0.0/0";
         "guest account" = "nobody";
         "map to guest" = "bad user";
@@ -24,8 +24,8 @@
         "guest ok" = "yes";
         "create mask" = "0644";
         "directory mask" = "0755";
-        # "force user" = "username";
-        # "force group" = "groupname";
+        "force user" = "server";
+        "force group" = "server";
       };
       "private" = {
         "path" = "/mnt/galaxy";
@@ -34,8 +34,8 @@
         "guest ok" = "no";
         "create mask" = "0644";
         "directory mask" = "0755";
-        # "force user" = "username";
-        # "force group" = "groupname";
+        "force user" = "server";
+        "force group" = "server";
       };
     };
   };
