@@ -1,13 +1,12 @@
-{
+{ pkgs, ... }: {
   services.samba = {
     enable = true;
-    securityType = "user";
     openFirewall = true;
     settings = {
       global = {
         "workgroup" = "WORKGROUP";
-        "server string" = "smbnix";
-        "netbios name" = "smbnix";
+        "server string" = "rpi";
+        "netbios name" = "rpi";
         "security" = "user";
         #"use sendfile" = "yes";
         #"max protocol" = "smb2";
@@ -24,8 +23,8 @@
         "guest ok" = "yes";
         "create mask" = "0644";
         "directory mask" = "0755";
-        "force user" = "server";
-        "force group" = "server";
+        #"force user" = "server";
+        #"force group" = "server";
       };
       "private" = {
         "path" = "/mnt/galaxy";
@@ -35,7 +34,7 @@
         "create mask" = "0644";
         "directory mask" = "0755";
         "force user" = "server";
-        "force group" = "server";
+        #1"force group" = "server";
       };
     };
   };
@@ -43,6 +42,24 @@
   services.samba-wsdd = {
     enable = true;
     openFirewall = true;
+  };
+
+  services.avahi = {
+    enable = true;
+    extraServiceFiles = {
+      ssh = "${pkgs.avahi}/etc/avahi/services/ssh.service";
+      smb = ''
+        <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+        <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+        <service-group>
+          <name replace-wildcards="yes">%h</name>
+          <service>
+            <type>_smb._tcp</type>
+            <port>445</port>
+          </service>
+        </service-group>
+      '';
+    };
   };
   
   networking.firewall.enable = true;
