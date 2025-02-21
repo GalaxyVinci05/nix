@@ -10,6 +10,7 @@
     nvtopPackages.nvidia
     prismlauncher
     unityhub
+    wineWowPackages.stable
   ] ++ [
 
     # Stable packages
