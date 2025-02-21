@@ -22,9 +22,15 @@
   boot.loader.generic-extlinux-compatible.enable = true;
 
   # boot.kernelPackages = pkgs.linuxKernel.packages.linux_rpi4;
+  boot.binfmt.emulatedSystems = [ "i686-linux" "armv7l-linux" ];
 
   # NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
+
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 8*1024;
+  } ];
 
   # Set your time zone.
   time.timeZone = "Europe/Rome";
