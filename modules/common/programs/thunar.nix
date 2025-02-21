@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ lib, pkgs, ... }: {
   programs.thunar = {
     enable = true;
     plugins = with pkgs.xfce; [
@@ -7,7 +7,10 @@
   };
 
   # Enable GNOME virtual filesystem
-  services.gvfs.enable = true;
+  services.gvfs = {
+    enable = true;
+    package = lib.mkForce pkgs.gnome.gvfs;
+  };
   # Enable tumbler for icon previews
   services.tumbler.enable = true;
 }
