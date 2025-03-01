@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   services.samba = {
-    enable = true;
+    enable = false;
     openFirewall = true;
     settings = {
       global = {
