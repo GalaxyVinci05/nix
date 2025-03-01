@@ -43,6 +43,7 @@
     gimp
     hypnotix
     libreoffice
+    nextcloud-client
     spotify
   ] ++ [
 
