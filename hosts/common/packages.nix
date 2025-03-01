@@ -26,7 +26,7 @@
     imv
     libcanberra-gtk3
     mpv
-    onedrive
+    # onedrive
     pamixer
     pulsemixer
     polkit_gnome
