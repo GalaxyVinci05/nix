@@ -12,6 +12,7 @@
     nodejs
     pm2
     unzip
+    usbutils
     wget
     tree
     yarn

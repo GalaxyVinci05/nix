@@ -32,10 +32,12 @@
     polkit_gnome
     rofi-wayland
     unzip
+    usbutils
     # waybar
     wget
     wl-clipboard
     xdg-user-dirs
+    zip
     tree
 
     # Others

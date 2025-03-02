@@ -21,11 +21,15 @@
   # Enables the generation of /boot/extlinux/extlinux.conf
   boot.loader.generic-extlinux-compatible.enable = true;
 
-  # boot.kernelPackages = pkgs.linuxKernel.packages.linux_rpi4;
+  boot.kernelPackages = pkgs-stable.linuxPackages_rpi4;
   boot.binfmt.emulatedSystems = [ "i686-linux" "armv7l-linux" ];
 
   # NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
+
+  boot.extraModprobeConfig = ''
+    options usb-storage.quirks=152d:0578:u 
+  '';
 
   swapDevices = [ {
     device = "/var/lib/swapfile";
