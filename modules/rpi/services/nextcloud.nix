@@ -6,7 +6,7 @@
     configureRedis = true;
 
     hostName = "galaxyserver.ddns.net";
-    maxUploadSize = "10G";
+    maxUploadSize = "32G";
 
     phpOptions."opcache.interned_strings_buffer" = "64";
     config = {
@@ -15,14 +15,19 @@
     };
     settings = {
       trusted_domains = [ "192.168.1.3" "galaxyserver.ddns.net" ];
+      log_type = "file";
     };
 
     package = pkgs-stable.nextcloud30;
   };
 
-  services.nginx.virtualHosts.${config.services.nextcloud.hostName} = {
-    forceSSL = true;
-    enableACME = true;
+  services.nginx = {
+    enable = true;
+    proxyTimeout = "3600s";
+    virtualHosts.${config.services.nextcloud.hostName} = {
+      forceSSL = true;
+      enableACME = true;
+    };
   };
 
   security.acme = {
