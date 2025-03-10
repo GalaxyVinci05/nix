@@ -4,7 +4,7 @@
   # List asus packages installed in system profile.
   environment.systemPackages = with pkgs; [
     audacity
-    davinci-resolve
+    # davinci-resolve
     kanshi
     kdePackages.kdenlive
     nvtopPackages.nvidia
