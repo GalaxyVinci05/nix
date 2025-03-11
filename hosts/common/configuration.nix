@@ -37,6 +37,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.galaxy = {
     isNormalUser = true;
+    description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.fish;
   };
@@ -62,13 +63,6 @@
     #     monospace = [ "JetBrainsMono" ];
     #   };
     # };
-  };
-
-  # Qt theming
-  qt = {
-    enable = true;
-    platformTheme = "qt5ct";
-    style = "kvantum";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
