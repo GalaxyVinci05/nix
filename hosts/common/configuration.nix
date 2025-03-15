@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, pkgs-stable, ... }:
 
 {
   nix.settings = {
@@ -39,7 +39,7 @@
     isNormalUser = true;
     description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.fish;
+    shell = pkgs-stable.fish;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
