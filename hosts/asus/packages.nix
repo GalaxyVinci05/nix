@@ -9,6 +9,7 @@
     kdePackages.kdenlive
     nvtopPackages.nvidia
     prismlauncher
+    lunar-client
     unityhub
     wineWowPackages.stable
   ] ++ [

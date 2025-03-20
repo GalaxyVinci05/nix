@@ -12,6 +12,8 @@
     trusted-public-keys = ["cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="];
   };
 
+  nixpkgs.config.cudaSupport = true;
+
   # Nvidia
   services.xserver.videoDrivers = [ "nvidia" ];
 
