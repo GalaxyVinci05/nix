@@ -201,11 +201,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1743164802,
-        "narHash": "sha256-z/A9XaScfXl++vNcJYa3feklb+ndisupDIjrN02caYc=",
+        "lastModified": 1743180568,
+        "narHash": "sha256-NLc01PyxtMg4EBz6e5Z6ppRjf+qZFg/dR/PUwzVHAO8=",
         "owner": "GalaxyVinci05",
         "repo": "Hyprland",
-        "rev": "03f52d9980b8023813bf4b3ff288dfbac2d5146d",
+        "rev": "f3160817c3cd4b0a5f02e564f8219834298d0069",
         "type": "github"
       },
       "original": {
