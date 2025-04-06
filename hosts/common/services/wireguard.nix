@@ -6,7 +6,8 @@
     wireguard.enable = true;
     wg-quick.interfaces = {
       # "wg0" is the network interface name. You can name the interface arbitrarily.
-      wg0.configFile = "/etc/wireguard/wg0.conf";
+      wg0.configFile = "/etc/wireguard/wg0.conf";  # metamc
+      # wg1.configFile = "/etc/wireguard/wg1.conf";  # protonvpn
     };
   };
 
