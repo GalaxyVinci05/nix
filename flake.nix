@@ -25,7 +25,7 @@
     };
 
     hyprland = {
-      url = "github:GalaxyVinci05/Hyprland";
+      url = "github:hyprwm/Hyprland";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
 

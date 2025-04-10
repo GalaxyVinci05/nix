@@ -25,6 +25,7 @@
     libreoffice
     nextcloud-client
     spotify
+    vscode
   ] ++ [
 
     # Stable packages
