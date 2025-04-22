@@ -98,7 +98,7 @@
   };
 
   security.polkit.enable = true;
-  security.pam.services.ly.enableGnomeKeyring = true;
+  # security.pam.services.ly.enableGnomeKeyring = true;
 
   system.stateVersion = "24.05"; # Did you read the comment?
 
