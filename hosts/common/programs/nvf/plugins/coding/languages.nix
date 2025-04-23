@@ -1,7 +1,7 @@
 {
   programs.nvf.settings.vim.languages = {
     enableLSP = true;
-    enableFormat = true;
+    enableFormat = false;
     enableTreesitter = true;
     enableExtraDiagnostics = true;
 
@@ -9,7 +9,7 @@
     clang.enable = true;
     # csharp = {
     #   enable = true;
-      # lsp.server = "omnisharp";
+    # lsp.server = "omnisharp";
     # };
     # css.enable = true;
     # html.enable = true;
