@@ -73,13 +73,13 @@
     enableSSHSupport = true;
   };
 
-  virtualisation.docker = {
-    enable = true;
-    rootless = {
-      enable = true;
-      setSocketVariable = true;
-    };
-  };
+    # virtualisation.docker = {
+    #   enable = true;
+    #   rootless = {
+    #     enable = true;
+    #     setSocketVariable = true;
+    #   };
+    # };
 
   systemd = {
     user.services.polkit-gnome-authentication-agent-1 = {
