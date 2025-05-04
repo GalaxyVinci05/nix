@@ -1,6 +1,5 @@
 {
   programs.nvf.settings.vim.languages = {
-    enableLSP = true;
     enableFormat = false;
     enableTreesitter = true;
     enableExtraDiagnostics = true;
