@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{
   networking = {
     firewall.allowedUDPPorts = [ 59820 ]; # Clients and peers can use the same port, see listenport
 

@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 
 {
   # List common packages installed in system profile.
@@ -26,9 +26,9 @@
     nextcloud-client
     spotify
     vscode
-  ] ++ [
+  ]; # ++ [
 
     # Stable packages
     # pkgs-stable.cava
-  ];
+    # ];
 }

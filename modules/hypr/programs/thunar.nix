@@ -7,10 +7,12 @@
   };
 
   # Enable GNOME virtual filesystem
-  services.gvfs = {
-    enable = true;
-    package = lib.mkForce pkgs.gnome.gvfs;
+  services = {
+    gvfs = {
+      enable = true;
+      package = lib.mkForce pkgs.gnome.gvfs;
+    };
+    # Enable tumbler for icon previews
+    tumbler.enable = true;
   };
-  # Enable tumbler for icon previews
-  services.tumbler.enable = true;
 }

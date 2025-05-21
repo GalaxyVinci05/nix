@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -12,9 +12,8 @@
     trusted-public-keys = ["cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="];
   };
 
-  nixpkgs.config.cudaSupport = true;
-
   # Nvidia
+  nixpkgs.config.cudaSupport = true;
   services.xserver.videoDrivers = [ "nvidia" ];
 
   hardware.nvidia = {
@@ -40,8 +39,6 @@
     MemoryHigh = "24G";
     MemoryMax = "32G";
   };
-
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # Fixes clock in Windows dual boot
   time.hardwareClockInLocalTime = true;

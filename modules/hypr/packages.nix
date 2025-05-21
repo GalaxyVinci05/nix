@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 
 {
   # List packages specific to hypr ecosystem
@@ -22,9 +22,5 @@
     rofi-wayland
     wl-clipboard
     xdg-user-dirs
-  ] ++ [
-
-    # Stable packages
-    # pkgs-stable.cava
   ];
 }

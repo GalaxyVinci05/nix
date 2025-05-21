@@ -1,31 +1,35 @@
-{ config, lib, pkgs, pkgs-stable, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
-  nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
-    # cachix
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
+  nix = {
+    settings = {
+      experimental-features = [ "nix-command" "flakes" ];
+      # cachix
+      substituters = ["https://hyprland.cachix.org"];
+      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    };
 
-
-  # Decrease nix store size
-  nix.optimise.automatic = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "-d";
+    # Decrease nix store size
+    optimise.automatic = true;
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "-d";
+    };
   };
 
   # Enable OpenGL and other graphics stuff
   hardware.graphics.enable = true;
 
   # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
-  # NTFS support
-  boot.supportedFilesystems = [ "ntfs" ];
+  boot = {
+    loader = {
+      systemd-boot.enable = true;
+      efi.canTouchEfiVariables = true;
+    };
+    # NTFS support
+    supportedFilesystems = [ "ntfs" ];
+  };
 
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -71,30 +75,6 @@
   programs.gnupg.agent = {
     enable = false;
     enableSSHSupport = true;
-  };
-
-    # virtualisation.docker = {
-    #   enable = true;
-    #   rootless = {
-    #     enable = true;
-    #     setSocketVariable = true;
-    #   };
-    # };
-
-  systemd = {
-    user.services.polkit-gnome-authentication-agent-1 = {
-      description = "polkit-gnome-authentication-agent-1";
-      wantedBy = [ "graphical-session.target" ];
-      wants = [ "graphical-session.target" ];
-      after = [ "graphical-session.target" ];
-      serviceConfig = {
-        Type = "simple";
-        ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
-        Restart = "on-failure";
-        RestartSec = 1;
-        TimeoutStopSec = 10;
-      };
-    };
   };
 
   security.polkit.enable = true;

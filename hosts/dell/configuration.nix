@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports =
@@ -11,8 +11,6 @@
   ];
 
   networking.hostName = "dell"; # Define your hostname.
-
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   system.stateVersion = "24.05"; # Did you read the comment?
 
