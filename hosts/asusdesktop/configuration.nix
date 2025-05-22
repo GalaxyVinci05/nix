@@ -21,16 +21,16 @@
     options = "-d";
   };
 
-  # services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = ["nvidia"];
 
   # Graphics
   hardware = {
     graphics.enable = true;
 
-    # nvidia = {
-    #   nvidiaSettings = true;
-    #   package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
-    # };
+    nvidia = {
+      nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
+    };
   };
 
   boot.loader.grub.enable = true;

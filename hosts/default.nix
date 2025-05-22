@@ -13,11 +13,13 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        config.nvidia.acceptLicense = true;
       };
 
       pkgs-stable = import nixpkgs-stable {
         inherit system;
         config.allowUnfree = true;
+        config.nvidia.acceptLicense = true;
       };
     };
 
