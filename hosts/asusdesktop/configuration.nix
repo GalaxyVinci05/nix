@@ -10,6 +10,8 @@
     experimental-features = [ "nix-command" "flakes" ];
   };
 
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.nvidia.acceptLicense = true;
 
   # Decrease nix store size
   nix.optimise.automatic = true;
@@ -19,19 +21,20 @@
     options = "-d";
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
+  # services.xserver.videoDrivers = ["nvidia"];
 
   # Graphics
   hardware = {
     graphics.enable = true;
 
-    nvidia = {
-      nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
-    };
+    # nvidia = {
+    #   nvidiaSettings = true;
+    #   package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
+    # };
   };
 
   boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/sda";
 
   # NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
