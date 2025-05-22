@@ -9,8 +9,8 @@
         enable = true;
 
         wayland = {
-          enable = true;
-          compositor = "kwin";
+          enable = false;
+          # compositor = "kwin";
         };
       };
     };

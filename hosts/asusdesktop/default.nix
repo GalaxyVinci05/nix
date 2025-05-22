@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ../common
+    # ../common
     ./configuration.nix
     ./hardware-configuration.nix
     ./packages.nix
