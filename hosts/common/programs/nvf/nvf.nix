@@ -16,7 +16,7 @@
         shiftwidth = 4;
       };
 
-      useSystemClipboard = true;
+      # useSystemClipboard = true;
       syntaxHighlighting = true;
       undoFile.enable = true;
     };
