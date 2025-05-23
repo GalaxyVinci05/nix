@@ -1,4 +1,3 @@
 {
-  # Temporarily disabled: dotnet 6 EOL
-  hardware.opentabletdriver.enable = false;
+  hardware.opentabletdriver.enable = true;
 }
