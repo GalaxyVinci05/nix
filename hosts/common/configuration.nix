@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, pkgs-stable, pkgs-legacy, ... }:
 
 {
   nix = {
@@ -43,7 +43,7 @@
     isNormalUser = true;
     description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs-stable.fish;
+    shell = pkgs-legacy.fish;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

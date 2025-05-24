@@ -1,4 +1,4 @@
-{ config, lib, pkgs-stable, ... }:
+{ config, lib, pkgs-stable, pkgs-legacy, ... }:
 
 {
   imports =
@@ -43,7 +43,7 @@
   users.users.server = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs-stable.fish;
+    shell = pkgs-legacy.fish;
   };
 
   # User with the only purpose of showing btop on an LCD screen

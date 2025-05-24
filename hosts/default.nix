@@ -5,6 +5,7 @@
     inherit (inputs.nixpkgs.lib) nixosSystem;
     inherit (inputs) nixpkgs;
     inherit (inputs) nixpkgs-stable;
+    inherit (inputs) nixpkgs-legacy;
 
     # Builder function for specialArgs
     mkSpecialArgs = system: {
@@ -17,6 +18,12 @@
       };
 
       pkgs-stable = import nixpkgs-stable {
+        inherit system;
+        config.allowUnfree = true;
+        config.nvidia.acceptLicense = true;
+      };
+
+      pkgs-legacy = import nixpkgs-legacy {
         inherit system;
         config.allowUnfree = true;
         config.nvidia.acceptLicense = true;

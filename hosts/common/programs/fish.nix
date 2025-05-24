@@ -1,6 +1,6 @@
-{ pkgs-stable, ... }: {
+{ pkgs-legacy, ... }: {
   programs.fish = {
     enable = true;
-    package = pkgs-stable.fish;
+    package = pkgs-legacy.fish;
   };
 }
