@@ -25,6 +25,7 @@
     libreoffice
     nextcloud-client
     spotify
+    transmission_4-gtk
     vscode
   ]; # ++ [
 
