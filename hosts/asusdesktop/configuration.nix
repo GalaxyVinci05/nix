@@ -35,6 +35,7 @@
 
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
+  boot.loader.grub.useOSProber = true;
 
   # NTFS support
   boot.supportedFilesystems = [ "ntfs" ];
@@ -47,9 +48,22 @@
   # Set your time zone.
   time.timeZone = "Europe/Rome";
 
+  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "it_IT.UTF-8";
+    LC_MEASUREMENT = "it_IT.UTF-8";
+    LC_MONETARY = "it_IT.UTF-8";
+    LC_NAME = "it_IT.UTF-8";
+    LC_NUMERIC = "it_IT.UTF-8";
+    LC_PAPER = "it_IT.UTF-8";
+    LC_TELEPHONE = "it_IT.UTF-8";
+    LC_TIME = "it_IT.UTF-8";
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.galaxy = {
     isNormalUser = true;
+    description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
     shell = pkgs-stable.fish;
   };
@@ -58,6 +72,7 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs-stable; [
+      nerd-fonts.jetbrains-mono
       liberation_ttf
       noto-fonts
       noto-fonts-cjk-sans

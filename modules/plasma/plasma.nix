@@ -6,13 +6,14 @@
     displayManager = {
       # defaultSession = "plasma";
       sddm = {
-        enable = true;
+        enable = false;
 
-        wayland = {
-          enable = false;
+        # wayland = {
+        #   enable = false;
           # compositor = "kwin";
-        };
+        # };
       };
+      ly.enable = true;
     };
   };
 }
