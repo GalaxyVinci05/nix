@@ -28,7 +28,9 @@
     graphics.enable = true;
 
     nvidia = {
+      modesetting.enable = true;
       nvidiaSettings = true;
+      # forceFullCompositionPipeline = true;
       package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
     };
   };
