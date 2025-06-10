@@ -35,13 +35,16 @@
     allowedUDPPorts = [ 19132 19133 ];
   };
 
+  networking.nameservers = [ "1.1.1.1" "1.0.0.1" ];
+  programs.mtr.enable = true;
+
   systemd.services.nix-daemon.serviceConfig = {
     MemoryHigh = "24G";
     MemoryMax = "32G";
   };
 
   # Fixes clock in Windows dual boot
-  time.hardwareClockInLocalTime = true;
+  # time.hardwareClockInLocalTime = true;
 
   system.stateVersion = "24.05"; # Did you read the comment?
 
