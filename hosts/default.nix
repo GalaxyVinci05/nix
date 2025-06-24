@@ -37,9 +37,24 @@
     };
   in {
 
-    asus = mkNixosSystem "asus" "x86_64-linux" ([ ./asus ] ++ [ ../modules/hypr ]);
-    asusdesktop = mkNixosSystem "asusdesktop" "x86_64-linux" ([ ./asusdesktop ] ++ [ ../modules/cinnamon ]);
-    dell = mkNixosSystem "dell" "x86_64-linux" ([ ./dell ] ++ [ ../modules/hypr ]);
-    rpi = mkNixosSystem "rpi" "aarch64-linux" [ ./rpi ];
+    asus = mkNixosSystem "asus" "x86_64-linux" [
+      ./asus
+      ../modules/hypr
+    ];
+
+    asusdesktop = mkNixosSystem "asusdesktop" "x86_64-linux" [
+      ./asusdesktop
+      ../modules/cinnamon
+    ];
+
+    dell = mkNixosSystem "dell" "x86_64-linux" [
+      ./dell
+      ../modules/hypr
+    ];
+
+    rpi = mkNixosSystem "rpi" "aarch64-linux" [
+      ./rpi
+    ];
+
   };
 }
