@@ -18,7 +18,7 @@
       log_type = "file";
     };
 
-    package = pkgs-stable.nextcloud30;
+    package = pkgs-stable.nextcloud31;
   };
 
   services.nginx = {
