@@ -8,7 +8,7 @@
     kanshi
     kdePackages.kdenlive
     nvtopPackages.nvidia
-    osu-lazer
+    osu-lazer-bin
     prismlauncher
     lunar-client
     # unityhub
