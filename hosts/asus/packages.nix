@@ -10,11 +10,12 @@
     nvtopPackages.nvidia
     prismlauncher
     lunar-client
-    unityhub
+    # unityhub
     wineWowPackages.stable
   ] ++ [
 
     # Stable packages
     pkgs-stable.blender
+    pkgs-stable.unityhub
   ];
 }

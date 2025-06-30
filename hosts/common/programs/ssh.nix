@@ -1,4 +1,4 @@
 {
   # Enable ssh agent on boot
-  programs.ssh.startAgent = true;
+  programs.ssh.startAgent = false;
 }
