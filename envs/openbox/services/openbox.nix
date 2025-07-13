@@ -1,5 +1,5 @@
 { pkgs-stable, ... }: {
-  services.xserver.windowManager.icewm.enable = true;
+  services.xserver.windowManager.openbox.enable = true;
   services.displayManager.ly.enable = true;
 
   xdg.portal = {

@@ -11,12 +11,6 @@
     mkSpecialArgs = system: {
       inherit inputs self;
 
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-        config.nvidia.acceptLicense = true;
-      };
-
       pkgs-stable = import nixpkgs-stable {
         inherit system;
         config.allowUnfree = true;
@@ -39,17 +33,17 @@
 
     asus = mkNixosSystem "asus" "x86_64-linux" [
       ./asus
-      ../modules/hypr
+      ../envs/hypr
     ];
 
     asusdesktop = mkNixosSystem "asusdesktop" "x86_64-linux" [
       ./asusdesktop
-      ../modules/cinnamon
+      ../envs/cinnamon
     ];
 
     dell = mkNixosSystem "dell" "x86_64-linux" [
       ./dell
-      ../modules/hypr
+      ../envs/hypr
     ];
 
     rpi = mkNixosSystem "rpi" "aarch64-linux" [
