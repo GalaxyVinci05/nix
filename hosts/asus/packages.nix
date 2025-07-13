@@ -4,6 +4,7 @@
   # List asus packages installed in system profile.
   environment.systemPackages = with pkgs; [
     audacity
+    easyeffects
     jetbrains.clion
     # davinci-resolve
     kanshi
