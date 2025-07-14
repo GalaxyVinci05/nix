@@ -18,6 +18,9 @@
     };
   };
 
+  # Allow unfree for pkgs
+  nixpkgs.config.allowUnfree = true;
+
   # Enable OpenGL and other graphics stuff
   hardware.graphics.enable = true;
 
