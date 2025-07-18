@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     audacity
     easyeffects
-    jetbrains.clion
+    # jetbrains.clion
     # davinci-resolve
     kanshi
     kdePackages.kdenlive
@@ -19,6 +19,7 @@
 
     # Stable packages
     pkgs-stable.blender
+    pkgs-stable.jetbrains.clion
     pkgs-stable.unityhub
   ];
 }

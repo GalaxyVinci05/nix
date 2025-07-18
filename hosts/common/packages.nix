@@ -20,7 +20,7 @@
 
     # Others
     discord
-    gimp
+    gimp3
     hypnotix
     libreoffice
     nextcloud-client
