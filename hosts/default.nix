@@ -44,7 +44,7 @@
 
     dell = mkNixosSystem "dell" "x86_64-linux" [
       ./dell
-      ../envs/plasma
+      ../envs/hypr
       ../modules/studio
     ];
 
