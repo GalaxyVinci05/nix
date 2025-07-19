@@ -6,9 +6,9 @@ _: {
   ];
 
   # Qt theming
-  # qt = {
-  #   enable = true;
-  #   platformTheme = "qt5ct";
-  #   style = "kvantum";
-  # };
+  qt = {
+    enable = true;
+    platformTheme = "qt5ct";
+    style = "kvantum";
+  };
 }
