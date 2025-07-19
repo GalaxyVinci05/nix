@@ -14,7 +14,6 @@
     prismlauncher
     lunar-client
     # unityhub
-    wineWowPackages.stable
   ] ++ [
 
     # Stable packages

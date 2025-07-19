@@ -27,6 +27,7 @@
     spotify
     transmission_4-gtk
     vscode
+    wineWowPackages.stable
   ]; # ++ [
 
     # Stable packages
