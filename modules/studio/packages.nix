@@ -7,6 +7,8 @@
     guitarix
     pipewire.jack
     qpwgraph
+    yabridge
+    yabridgectl
   ] ++ [
     # Stable
     pkgs-stable.reaper
