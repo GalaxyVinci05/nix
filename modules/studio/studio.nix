@@ -3,8 +3,5 @@
   security.rtkit.enable = true;
   
   # Real-time audio
-  musnix = {
-    enable = true;
-    kernel.realtime = true;
-  };
+  musnix.enable = true;
 }
