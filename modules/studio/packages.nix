@@ -3,7 +3,7 @@
 {
   # List packages specific to studio
   environment.systemPackages = with pkgs; [
-    carla
+    audacity
     guitarix
     pipewire.jack
     qpwgraph
