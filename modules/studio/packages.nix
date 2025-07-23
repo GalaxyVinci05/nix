@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     audacity
     guitarix
+    kdePackages.kdenlive
     pipewire.jack
     qpwgraph
     yabridge
