@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 
 {
   # List packages specific to studio
@@ -8,10 +8,8 @@
     kdePackages.kdenlive
     pipewire.jack
     qpwgraph
+    reaper
     yabridge
     yabridgectl
-  ] ++ [
-    # Stable
-    pkgs-stable.reaper
   ];
 }
