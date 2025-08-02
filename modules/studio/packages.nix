@@ -9,6 +9,8 @@
     pipewire.jack
     qpwgraph
     reaper
+    wineWowPackages.stable
+    winetricks
     yabridge
     yabridgectl
   ];
