@@ -3,5 +3,6 @@ _: {
     ./asusd.nix
     ./logind.nix
     ./ollama.nix
+    ./thermald.nix
   ];
 }
