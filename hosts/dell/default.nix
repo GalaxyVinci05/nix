@@ -4,7 +4,7 @@ _: {
     ./configuration.nix
     ./hardware-configuration.nix
     ./packages.nix
-    # ./programs
+    ./programs
     ./services
   ];
 }
