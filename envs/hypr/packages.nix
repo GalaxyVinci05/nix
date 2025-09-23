@@ -19,7 +19,7 @@
     mpv
     pulsemixer
     polkit_gnome
-    rofi-wayland
+    rofi
     wl-clipboard
     xdg-user-dirs
   ];

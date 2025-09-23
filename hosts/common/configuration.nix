@@ -51,7 +51,7 @@
   users.users.galaxy = {
     isNormalUser = true;
     description = "Vincenzo Filosa";
-    extraGroups = [ "wheel" "audio" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "audio" "networkmanager" "docker" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs-legacy.fish;
   };
 

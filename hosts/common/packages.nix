@@ -25,9 +25,11 @@
     libreoffice
     nextcloud-client
     spotify
+    tidal-hifi
     transmission_4-gtk
     vscode
     wineWowPackages.stable
+    winetricks
   ]; # ++ [
 
     # Stable packages

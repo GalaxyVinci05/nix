@@ -6,6 +6,7 @@
       obs-vkcapture
       obs-pipewire-audio-capture
       obs-multi-rtmp
+      droidcam-obs
     ];
     package = pkgs.obs-studio;
   };
