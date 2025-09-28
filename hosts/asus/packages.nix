@@ -6,7 +6,7 @@
     audacity
     easyeffects
     # jetbrains.clion
-    # davinci-resolve
+    davinci-resolve
     kanshi
     kdePackages.kdenlive
     nvtopPackages.nvidia
