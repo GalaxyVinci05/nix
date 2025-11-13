@@ -25,6 +25,7 @@
     libreoffice
     nextcloud-client
     spotify
+    telegram-desktop
     tidal-hifi
     transmission_4-gtk
     vscode
