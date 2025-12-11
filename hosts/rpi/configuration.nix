@@ -45,7 +45,7 @@
   users.users.server = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs-stable.zsh;
+    shell = pkgs-stable.fish;
   };
 
   # User with the only purpose of showing btop on an LCD screen
