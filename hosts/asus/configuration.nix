@@ -22,6 +22,19 @@
   # Using Zen kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
+  boot.kernelParams = [
+    "zswap.enabled=1"
+    "zswap.compressor=lz4"
+    "zswap.zpool=z3fold"
+  ];
+
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 32 * 1024;
+    }
+  ];
+
   networking.hostName = "asus"; # Define your hostname.
 
   networking.firewall = {

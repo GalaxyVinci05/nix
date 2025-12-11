@@ -8,20 +8,22 @@
       substituters = [
         "https://hyprland.cachix.org"
         "https://nix-community.cachix.org"
+        "https://cache.nixos-cuda.org?priority=41"
       ];
       trusted-public-keys = [
         "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+        "cache.nixos-cuda.org:74DUi4Ye579gUqzH4ziL9IyiJBlDpMRn9MBN8oNan9M="
       ];
     };
 
     # Decrease nix store size
-    optimise.automatic = true;
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "-d";
-    };
+    # optimise.automatic = true;
+    # gc = {
+    #   automatic = true;
+    #   dates = "weekly";
+    #   options = "-d";
+    # };
   };
 
   # Allow unfree for pkgs
@@ -52,7 +54,7 @@
     isNormalUser = true;
     description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "audio" "networkmanager" "docker" "libvirtd" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs-legacy.fish;
+    shell = pkgs.fish;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
