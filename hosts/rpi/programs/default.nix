@@ -5,5 +5,6 @@ _: {
     ./neovim.nix
     ./nh.nix
     ./tmux.nix
+    ./zsh.nix
   ];
 }

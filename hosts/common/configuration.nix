@@ -54,7 +54,7 @@
     isNormalUser = true;
     description = "Vincenzo Filosa";
     extraGroups = [ "wheel" "audio" "networkmanager" "docker" "libvirtd" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
