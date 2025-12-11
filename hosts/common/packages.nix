@@ -10,6 +10,7 @@
     cava
     cpufetch
     fastfetch
+    fzf
     git
     pamixer
     unzip

@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -9,8 +9,17 @@
       plugins = [
         "git"
         "z"
+        "zsh-autocomplete"
+        "zsh-autosuggestions"
+        "zsh-interactive-cd"
       ];
       theme = "robbyrussell";
+      custom = "/home/galaxy/.oh-my-zsh/custom";
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    zsh-autocomplete
+    zsh-autosuggestions
+  ];
 }
