@@ -11,12 +11,12 @@
   nix.settings.trusted-public-keys = [ "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=" ];
 
   # Decrease nix store size
-  nix.optimise.automatic = true;
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "-d";
-  };
+  # nix.optimise.automatic = true;
+  # nix.gc = {
+  #   automatic = true;
+  #   dates = "weekly";
+  #   options = "-d";
+  # };
 
   # Use the extlinux boot loader. (NixOS wants to enable GRUB by default)
   boot.loader.grub.enable = false;

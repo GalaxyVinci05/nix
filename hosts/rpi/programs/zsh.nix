@@ -9,7 +9,6 @@
       plugins = [
         "git"
         "z"
-        "zsh-autocomplete"
         "zsh-autosuggestions"
         "zsh-interactive-cd"
       ];
@@ -19,7 +18,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    zsh-autocomplete
     zsh-autosuggestions
   ];
 }

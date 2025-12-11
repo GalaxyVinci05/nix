@@ -7,6 +7,7 @@
     certbot
     cpufetch
     fastfetch
+    fzf
     git
     jdk21_headless
     nodejs
