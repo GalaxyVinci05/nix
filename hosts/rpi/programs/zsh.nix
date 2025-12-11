@@ -34,7 +34,6 @@
 
     interactiveShellInit = with pkgs; ''
       source ${zsh-nix-shell}/share/zsh-nix-shell/nix-shell.plugin.zsh
-      source ${zsh-autocomplete}/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
     '';
   };
 }
