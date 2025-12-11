@@ -3,6 +3,7 @@ _: {
     ../../common/programs/nvf
     ./fish.nix
     ./neovim.nix
+    ./nh.nix
     ./tmux.nix
   ];
 }
