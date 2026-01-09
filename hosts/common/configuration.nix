@@ -28,6 +28,7 @@
 
   # Allow unfree for pkgs
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.microsoftVisualStudioLicenseAccepted = true;
 
   # Enable OpenGL and other graphics stuff
   hardware.graphics.enable = true;
