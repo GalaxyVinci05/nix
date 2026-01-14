@@ -1,7 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
-  # List packages specific to hypr ecosystem
+  # List packages for wm ecosystems
   environment.systemPackages = with pkgs; [
     alacritty
     brightnessctl
@@ -10,10 +10,6 @@
     file-roller
     glib
     gsettings-desktop-schemas
-    hyprcursor
-    hyprpaper
-    hyprpicker
-    hyprshot
     imv
     libcanberra-gtk3
     mpv

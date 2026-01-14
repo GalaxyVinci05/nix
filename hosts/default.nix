@@ -33,7 +33,7 @@
 
     asus = mkNixosSystem "asus" "x86_64-linux" [
       ./asus
-      ../envs/hypr
+      ../envs/wms/hypr
       ../modules/studio
     ];
 
@@ -44,7 +44,7 @@
 
     dell = mkNixosSystem "dell" "x86_64-linux" [
       ./dell
-      ../envs/hypr
+      ../envs/wms/hypr
       ../modules/studio
     ];
 
