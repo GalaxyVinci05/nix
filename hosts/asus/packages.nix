@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ inputs, pkgs, pkgs-stable, ... }:
 
 {
   # List asus packages installed in system profile.
@@ -9,11 +9,14 @@
     davinci-resolve
     kanshi
     kdePackages.kdenlive
+    lunar-client
     nvtopPackages.nvidia
     osu-lazer-bin
     prismlauncher
-    lunar-client
     # unityhub
+
+    inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
+    (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
   ] ++ [
 
     # Stable packages

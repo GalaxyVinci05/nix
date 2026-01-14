@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   # List packages specific to hypr ecosystem
@@ -22,5 +22,7 @@
     rofi
     wl-clipboard
     xdg-user-dirs
+
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
