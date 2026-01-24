@@ -38,6 +38,15 @@
     musnix = {
       url = "github:musnix/musnix";
     };
+
+    nix-gaming = {
+      url = "github:fufexan/nix-gaming";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
 }

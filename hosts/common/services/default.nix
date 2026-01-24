@@ -5,6 +5,7 @@ _: {
     ./fstrim.nix
     ./otd.nix
     ./pipewire.nix
+    ./power.nix
     ./wireguard.nix
   ];
 }

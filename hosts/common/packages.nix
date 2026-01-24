@@ -6,12 +6,14 @@
 
     # System
     acpi
+    adw-gtk3
     btop
     cava
     cpufetch
     fastfetch
     fzf
     git
+    nwg-look
     pamixer
     unzip
     usbutils
