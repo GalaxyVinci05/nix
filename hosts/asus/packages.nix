@@ -8,15 +8,17 @@
     # jetbrains.clion
     davinci-resolve
     kanshi
-    kdePackages.kdenlive
+    # kdePackages.kdenlive
     lunar-client
     nvtopPackages.nvidia
     osu-lazer-bin
     prismlauncher
+    jdk21_headless
+    maven
     # unityhub
 
-    inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
-    (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
+    # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
+    # (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
   ] ++ [
 
     # Stable packages

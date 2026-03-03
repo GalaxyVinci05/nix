@@ -4,7 +4,7 @@
     enableCompletion = false;
     autosuggestions = {
       enable = true;
-      strategy = [ "match_prev_cmd" ];
+      # strategy = [ "match_prev_cmd" ];
     };
     syntaxHighlighting = {
       enable = true;
