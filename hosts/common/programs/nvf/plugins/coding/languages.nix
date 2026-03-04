@@ -12,7 +12,7 @@
     # };
     # css.enable = true;
     # html.enable = true;
-    # java.enable = true;
+    java.enable = true;
     # lua.enable = true;
     markdown.enable = true;
     nix.enable = true;
