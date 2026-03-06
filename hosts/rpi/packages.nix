@@ -10,8 +10,10 @@
     fzf
     git
     jdk21_headless
+    mpv
     nodejs
     pm2
+    ranger
     unzip
     usbutils
     wget

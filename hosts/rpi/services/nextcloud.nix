@@ -9,6 +9,9 @@
     maxUploadSize = "32G";
 
     phpOptions."opcache.interned_strings_buffer" = "64";
+    #phpOptions."enabledPreviewProviders" = ''
+    #  OC\Preview\Movie
+    #'';
     config = {
       dbtype = "pgsql";
       adminpassFile = "/etc/adminpass";
