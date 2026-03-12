@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   # List common packages installed in system profile.
@@ -32,11 +32,12 @@
     tidal-hifi
     transmission_4-gtk
     vscode
-    wineWow64Packages.stable
+    # wineWow64Packages.stable
     winetricks
-  ]; # ++ [
+  ] ++ [
 
     # Stable packages
     # pkgs-stable.cava
-    # ];
+    pkgs-stable.wineWow64Packages.stable
+  ];
 }
