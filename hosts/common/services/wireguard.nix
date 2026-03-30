@@ -8,6 +8,7 @@
       # "wg0" is the network interface name. You can name the interface arbitrarily.
       wg2.configFile = "/etc/wireguard/wg2.conf";  # metamc bot dev
       wg3.configFile = "/etc/wireguard/wg3.conf";  # metamc mc dev
+      wg4.configFile = "/etc/wireguard/wg4.conf";  # pvptiers
       # wg1.configFile = "/etc/wireguard/wg1.conf";  # protonvpn
     };
   };

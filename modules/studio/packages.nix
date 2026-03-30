@@ -1,17 +1,19 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   # List packages specific to studio
   environment.systemPackages = with pkgs; [
     audacity
-    guitarix
+    # guitarix
     kdePackages.kdenlive
     pipewire.jack
     qpwgraph
     reaper
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     yabridge
     yabridgectl
+  ] ++ [
+    pkgs-stable.guitarix
   ];
 }

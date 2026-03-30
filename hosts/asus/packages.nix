@@ -15,6 +15,7 @@
     prismlauncher
     jdk21_headless
     maven
+    ydotool
     # unityhub
 
     # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
