@@ -4,8 +4,8 @@
   # List packages specific to studio
   environment.systemPackages = with pkgs; [
     audacity
-    # guitarix
-    kdePackages.kdenlive
+    guitarix
+    # kdePackages.kdenlive
     pipewire.jack
     qpwgraph
     reaper
@@ -13,7 +13,7 @@
     winetricks
     yabridge
     yabridgectl
-  ] ++ [
-    pkgs-stable.guitarix
-  ];
+  ]; #++ [
+    # pkgs-stable.guitarix
+  #];
 }
