@@ -27,6 +27,8 @@
   # Using Zen kernel
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+
   networking.hostName = "asus"; # Define your hostname.
 
   networking.firewall = {

@@ -8,7 +8,7 @@
     # jetbrains.clion
     davinci-resolve
     kanshi
-    # kdePackages.kdenlive
+    kdePackages.kdenlive
     lunar-client
     nvtopPackages.nvidia
     osu-lazer-bin

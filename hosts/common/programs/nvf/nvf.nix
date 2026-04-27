@@ -16,6 +16,12 @@
         shiftwidth = 4;
       };
 
+      clipboard = {
+        enable = true;
+        providers.wl-copy.enable = true;
+        registers = "unnamedplus";
+      };
+
       # useSystemClipboard = true;
       syntaxHighlighting = true;
       undoFile.enable = true;

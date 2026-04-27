@@ -1,5 +1,5 @@
 _: {
   imports = [
-    ./obs.nix
+    #./obs.nix
   ];
 }
