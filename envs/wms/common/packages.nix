@@ -17,6 +17,7 @@
     polkit_gnome
     rofi
     wl-clipboard
+    wl-clip-persist
     xdg-user-dirs
 
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default

@@ -10,14 +10,14 @@
     #   enable = true;
     # lsp.server = "omnisharp";
     # };
-    # css.enable = true;
-    # html.enable = true;
+    css.enable = true;
+    html.enable = true;
     java.enable = true;
-    # lua.enable = true;
+    lua.enable = true;
     markdown.enable = true;
     nix.enable = true;
     # python.enable = true;
-    ts = {
+    typescript = {
       enable = true;
       extraDiagnostics.enable = false;
     };
