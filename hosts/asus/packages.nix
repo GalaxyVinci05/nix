@@ -4,27 +4,23 @@
   # List asus packages installed in system profile.
   environment.systemPackages = with pkgs; [
     audacity
+    blender
     easyeffects
-    # jetbrains.clion
-    davinci-resolve
+    jetbrains.clion
     kanshi
     kdePackages.kdenlive
-    lunar-client
     nvtopPackages.nvidia
     osu-lazer-bin
     prismlauncher
     jdk21_headless
     maven
     ydotool
-    # unityhub
+    unityhub
 
     # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
     # (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
   ] ++ [
 
     # Stable packages
-    pkgs-stable.blender
-    pkgs-stable.jetbrains.clion
-    pkgs-stable.unityhub
   ];
 }
