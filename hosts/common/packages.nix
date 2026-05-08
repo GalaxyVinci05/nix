@@ -27,11 +27,11 @@
     hypnotix
     libreoffice
     nextcloud-client
-    spotify
+    # spotify
     telegram-desktop
     tidal-hifi
-    transmission_4-gtk
-    vscode
+    # transmission_4-gtk
+    # vscode
     # wineWow64Packages.stable
     winetricks
   ] ++ [
