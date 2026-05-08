@@ -50,6 +50,7 @@
 
     rpi = mkNixosSystem "rpi" "aarch64-linux" [
       ./rpi
+      ../modules/rpi-audio
     ];
 
   };

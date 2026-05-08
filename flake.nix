@@ -1,7 +1,7 @@
 {
   description = "My personal NixOS configuration flake";
 
-  outputs = { self, nixpkgs, nixpkgs-stable, nvf, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, nvf, nixos-hardware, ... }@inputs:
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "aarch64-linux"
@@ -19,6 +19,10 @@
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
     nixpkgs-legacy.url = "github:NixOS/nixpkgs/nixos-24.11";
     # nixpkgs-legacy.url = "github:NixOS/nixpkgs/nixos-23.11";
+
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
+    };
 
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
