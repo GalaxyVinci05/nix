@@ -91,6 +91,14 @@
     enableSSHSupport = true;
   };
 
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   security.polkit.enable = true;
   # security.pam.services.ly.enableGnomeKeyring = true;
 

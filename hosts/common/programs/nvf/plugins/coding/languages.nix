@@ -4,7 +4,7 @@
     enableTreesitter = true;
     enableExtraDiagnostics = true;
 
-    assembly.enable = true;
+    # assembly.enable = true;
     clang.enable = true;
     # csharp = {
     #   enable = true;
@@ -12,7 +12,7 @@
     # };
     css.enable = true;
     html.enable = true;
-    java.enable = true;
+    # java.enable = true;
     lua.enable = true;
     markdown.enable = true;
     nix.enable = true;
