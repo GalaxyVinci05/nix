@@ -728,6 +728,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1778443072,
+        "narHash": "sha256-zi7/fsqM/kFdNuED//4WOCUtezGtKKqRNORjMvfwjnA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "da5ad661ba4e5ef59ba743f0d112cbc30e474f32",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "noctalia": {
       "inputs": {
         "nixpkgs": [
@@ -797,6 +813,24 @@
         "type": "github"
       }
     },
+    "osu-nixos": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1778698862,
+        "narHash": "sha256-gEc12SVUGC0RUddVFLdw1qtncfI9Zaooq6oyiP71wwc=",
+        "owner": "galaxyvinci05",
+        "repo": "linux-osu-stable-installer-nixos",
+        "rev": "476b0d876333105cdac2277fb23ba6f4827f7a3b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "galaxyvinci05",
+        "repo": "linux-osu-stable-installer-nixos",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -831,7 +865,8 @@
         "nixpkgs-legacy": "nixpkgs-legacy",
         "nixpkgs-stable": "nixpkgs-stable",
         "noctalia": "noctalia",
-        "nvf": "nvf"
+        "nvf": "nvf",
+        "osu-nixos": "osu-nixos"
       }
     },
     "systems": {

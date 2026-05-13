@@ -13,7 +13,7 @@
     winetricks
     yabridge
     yabridgectl
-  ]; #++ [
-    # pkgs-stable.guitarix
-  #];
+  ] ++ [
+    pkgs-stable.lmms
+  ];
 }

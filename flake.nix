@@ -47,6 +47,10 @@
       url = "github:fufexan/nix-gaming";
     };
 
+    osu-nixos = {
+      url = "github:galaxyvinci05/linux-osu-stable-installer-nixos";
+    };
+
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
