@@ -9,11 +9,11 @@
     pipewire.jack
     qpwgraph
     reaper
-    wineWow64Packages.stable
     winetricks
-    yabridge
-    yabridgectl
   ] ++ [
     pkgs-stable.lmms
+    pkgs-stable.wineWowPackages.stable
+    pkgs-stable.yabridge
+    pkgs-stable.yabridgectl
   ];
 }

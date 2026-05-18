@@ -33,7 +33,10 @@
   nixpkgs.config.microsoftVisualStudioLicenseAccepted = true;
 
   # Enable OpenGL and other graphics stuff
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
 
   # Use the systemd-boot EFI boot loader.
   boot = {

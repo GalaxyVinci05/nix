@@ -43,9 +43,9 @@
       url = "github:musnix/musnix";
     };
 
-    nix-gaming = {
-      url = "github:fufexan/nix-gaming";
-    };
+    #nix-gaming = {
+      #url = "github:fufexan/nix-gaming";
+    #};
 
     osu-nixos = {
       url = "github:galaxyvinci05/linux-osu-stable-installer-nixos";

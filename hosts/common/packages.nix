@@ -38,6 +38,6 @@
 
     # Stable packages
     # pkgs-stable.cava
-    pkgs-stable.wineWow64Packages.stable
+    # wineWow64Packages.stable
   ];
 }
