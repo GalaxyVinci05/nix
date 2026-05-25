@@ -688,11 +688,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1778794861,
-        "narHash": "sha256-2e8IhGNdh13wJrJech9NHRPhI3yh9kVjtOp9VPKJo0I=",
+        "lastModified": 1779454688,
+        "narHash": "sha256-gEc12SVUGC0RUddVFLdw1qtncfI9Zaooq6oyiP71wwc=",
         "owner": "galaxyvinci05",
         "repo": "linux-osu-stable-installer-nixos",
-        "rev": "7f68f2c6ca98bec9d22533ce8d4572af987b983d",
+        "rev": "bf21216733d9ff1d1a89298f2ac12857f1f2cf99",
         "type": "github"
       },
       "original": {

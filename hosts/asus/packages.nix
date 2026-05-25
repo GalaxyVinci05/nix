@@ -8,7 +8,7 @@
     easyeffects
     jetbrains.clion
     kanshi
-    kdePackages.kdenlive
+    # kdePackages.kdenlive
     nvtopPackages.nvidia
     osu-lazer-bin
     prismlauncher
@@ -23,5 +23,6 @@
   ] ++ [
 
     # Stable packages
+    pkgs-stable.kdePackages.kdenlive
   ];
 }
