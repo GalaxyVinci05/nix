@@ -27,6 +27,7 @@
     hypnotix
     libreoffice
     nextcloud-client
+    sone
     # spotify
     telegram-desktop
     tidal-hifi

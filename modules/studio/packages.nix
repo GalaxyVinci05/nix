@@ -10,6 +10,7 @@
     qpwgraph
     reaper
     winetricks
+    zrythm
   ] ++ [
     pkgs-stable.lmms
     pkgs-stable.wineWowPackages.stable

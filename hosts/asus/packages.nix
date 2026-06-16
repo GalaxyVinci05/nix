@@ -11,13 +11,14 @@
     # kdePackages.kdenlive
     nvtopPackages.nvidia
     osu-lazer-bin
-    prismlauncher
-    jdk21_headless
+    # prismlauncher
+    jdk25_headless
     maven
     ydotool
     unityhub
 
     inputs.osu-nixos.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.prismlauncher.packages.${pkgs.stdenv.hostPlatform.system}.prismlauncher
     # inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.wine-osu
     # (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
   ] ++ [
