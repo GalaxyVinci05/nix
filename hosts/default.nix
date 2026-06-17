@@ -35,6 +35,7 @@
       ./asus
       ../envs/wms/hypr
       ../modules/studio
+      ../modules/uni
     ];
 
     asusdesktop = mkNixosSystem "asusdesktop" "x86_64-linux" [
@@ -46,6 +47,7 @@
       ./dell
       ../envs/wms/hypr
       ../modules/studio
+      ../modules/uni
     ];
 
     rpi = mkNixosSystem "rpi" "aarch64-linux" [
