@@ -1,4 +1,4 @@
-{ inputs, pkgs, pkgs-stable, ... }:
+{ inputs, pkgs, pkgs-stable, pkgs-legacy, ... }:
 
 {
   # List asus packages installed in system profile.
@@ -23,7 +23,7 @@
     # (inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-stable.override { useUmu = false; })
   ] ++ [
 
-    # Stable packages
-    pkgs-stable.kdePackages.kdenlive
+    # Stable/legacy packages
+    pkgs-legacy.kdePackages.kdenlive
   ];
 }

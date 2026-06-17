@@ -1,4 +1,4 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, pkgs-legacy, ... }:
 
 {
   # List packages specific to studio
@@ -12,9 +12,9 @@
     winetricks
     zrythm
   ] ++ [
-    pkgs-stable.lmms
-    pkgs-stable.wineWowPackages.stable
-    pkgs-stable.yabridge
-    pkgs-stable.yabridgectl
+    pkgs-legacy.lmms
+    pkgs-legacy.wineWowPackages.stable
+    pkgs-legacy.yabridge
+    pkgs-legacy.yabridgectl
   ];
 }
