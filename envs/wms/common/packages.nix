@@ -5,7 +5,7 @@
   environment.systemPackages = with pkgs; [
     alacritty
     brightnessctl
-    dunst
+    # dunst
     ffmpegthumbnailer
     file-roller
     glib

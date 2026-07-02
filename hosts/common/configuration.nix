@@ -69,12 +69,14 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
+      corefonts
+      fira
       liberation_ttf
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
+      roboto
       unifont
-      corefonts
       vista-fonts
       # (nerdfonts.override { fonts = [ "JetBrainsMono Nerd Font" ]; })
     ];
