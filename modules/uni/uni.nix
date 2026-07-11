@@ -6,7 +6,7 @@
     # python.enable = true;
     sql = {
       enable = true;
-      dialect = "oracle";
+      # dialect = "oracle";
     };
   };
 }
