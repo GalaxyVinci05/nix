@@ -3,5 +3,6 @@ _: {
     ./gnome-keyring.nix
     ./greetd.nix
     ./ly.nix
+    ./playerctld.nix
   ];
 }

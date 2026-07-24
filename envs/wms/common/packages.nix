@@ -22,4 +22,12 @@
 
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      mpv = prev.mpv.override {
+        scripts = [ final.mpvScripts.mpris ];
+      };
+    })
+  ];
 }
