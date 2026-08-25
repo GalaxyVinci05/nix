@@ -4,7 +4,7 @@ _: {
     ./input-remapper.nix
     ./logind.nix
     ./ollama.nix
-    ./openrazer.nix
+    #./openrazer.nix
     ./printing.nix
     ./samba.nix
     ./thermald.nix

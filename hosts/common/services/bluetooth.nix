@@ -7,5 +7,5 @@
   };
 
   # Front end
-  services.blueman.enable = true;
+  services.blueman.enable = false; # noctalia
 }
