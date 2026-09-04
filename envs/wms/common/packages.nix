@@ -12,6 +12,7 @@
     gsettings-desktop-schemas
     imv
     libcanberra-gtk3
+    libnotify
     mpv
     pulsemixer
     polkit_gnome
