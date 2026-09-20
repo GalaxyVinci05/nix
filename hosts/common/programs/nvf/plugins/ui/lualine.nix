@@ -17,7 +17,7 @@
         "neo-tree"
       ];
 
-      activeSection = {
+      setupOpts.sections = {
         a = [
           ''
             {

@@ -9,6 +9,7 @@
       wg2.configFile = "/etc/wireguard/wg2.conf";  # metamc bot dev
       # wg3.configFile = "/etc/wireguard/wg3.conf";  # metamc mc dev
       # wg4.configFile = "/etc/wireguard/wg4.conf";  # pvptiers
+      wg5.configFile = "/etc/wireguard/wg5.conf";  # metamc staff
       # wg1.configFile = "/etc/wireguard/wg1.conf";  # protonvpn
     };
   };
