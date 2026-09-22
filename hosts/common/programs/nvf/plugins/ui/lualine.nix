@@ -3,90 +3,80 @@
     lualine = {
       enable = true;
 
-      componentSeparator = {
-        left = "";
-        right = "";
-      };
+      setupOpts = {
+        options = {
+          component_separators = {
+            left = "";
+            right = "";
+          };
 
-      sectionSeparator = {
-        left = "";
-        right = "";
-      };
+          section_separators = {
+            left = "";
+            right = "";
+          };
 
-      ignoreFocus = [
-        "neo-tree"
-      ];
+          ignore_focus = [
+            "neo-tree"
+          ];
+        };
 
-      setupOpts.sections = {
-        a = [
-          ''
+        sections = {
+          lualine_a = [
             {
-              "mode",
-              "icons_enabled = true",
+              "@1" = "mode";
+              icons_enabled = true;
               separator = {
-                left = '▎';
-                right = ''
-              },
+                left = "▎";
+                right = "";
+              };
             }
-          ''
-        ];
+          ];
 
-        b = [
-          ''
+          lualine_b = [
             {
-              "branch",
-              icon = '',
-              separator = { right = '' }
+              "@1" = "branch";
+              icon = "";
+              separator = { right = ""; };
             }
-          ''
-        ];
+          ];
 
-        c = [
-          ''
+          lualine_c = [
             {
-              "filetype",
-              colored = true,
-              icon_only = true,
-              icon = { align = 'left' }
+              "@1" = "filetype";
+              colored = true;
+              icon_only = true;
+              icon = { align = "left"; };
             }
-          ''
-          ''
             {
-              "filename",
-              symbols = { modified = ' ', readonly = ' ' },
-              separator = { right = '' }
+              "@1" = "filename";
+              symbols = { modified = " "; readonly = " "; };
+              separator = { right = ""; };
             }
-          ''
-        ];
+          ];
 
-        y = [
-          ''
+          lualine_y = [
             {
-              "progress",
-              separator = { left = '' }
+              "@1" = "progress";
+              separator = { left = ""; };
             }
-          ''
-        ];
+          ];
 
-        z = [
-          ''
+          lualine_z = [
             {
-              "location",
-              separator = { left = '' }
+              "@1" = "location";
+              separator = { left = ""; };
             }
-          ''
-          ''
             {
-              "fileformat",
-              color = { fg = 'black' },
+              "@1" = "fileformat";
+              color = { fg = "black"; };
               symbols = {
-                unix = '', -- e712
-                dos = '',  -- e70f
-                mac = '',  -- e711
-              }
+                unix = ""; # e712
+                dos = "";  # e70f
+                mac = "";  # e711
+              };
             }
-          ''
-        ];
+          ];
+        };
       };
     };
   };
