@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
     dbeaver-bin
     gcc
+    jdk25
     sqlcl
   ];
 }
