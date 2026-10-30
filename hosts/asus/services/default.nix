@@ -5,6 +5,7 @@ _: {
     ./logind.nix
     ./ollama.nix
     #./openrazer.nix
+    #./prime.nix
     ./printing.nix
     ./samba.nix
     ./thermald.nix

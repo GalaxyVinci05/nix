@@ -6,13 +6,15 @@
     audacity
     blender
     easyeffects
-    jetbrains.clion
+    # jetbrains.clion
+    jetbrains.rider
     kanshi
     kdePackages.kdenlive
+    # msbuild
     nvtopPackages.nvidia
     osu-lazer-bin
     # prismlauncher
-    jdk25_headless
+    # jdk25_headless
     maven
     ydotool
     unityhub
